@@ -10,7 +10,7 @@ const LoginRoute = () => {
   const navigate=useNavigate()
 
   const loginSuccess=(jwt_token)=>{
-    Cookies.set('jwt_token',jwt_token,{expires:1})
+    Cookies.set('jwt_token',jwt_token,{expires:30})
     navigate('/')
   }
 
